@@ -4,7 +4,7 @@ class ApiError extends Error {  // this is a inherited  class of the Error class
         message="somthing went wrong",
         errors = [],
         statck = ""
-    ){
+    ){   //super is used to call or pass the values from child class to the parent class
         super(message) // this is a built-in method of the Error class which is used to pass the message to the Error class
         this.statuscode = statuscode// this is a property of the class which is used to store the status code of the error
         this.message = message// this is a property of the class which is used to store the message of the error
