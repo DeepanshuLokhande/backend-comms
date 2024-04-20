@@ -1,7 +1,7 @@
 // const asyncHandler =  (reqHandler)=>{
 //    return  (req , res , next)=>{
-//         Promise.resolve(reqHandler(req,res,next)).
-//         catch((err)=>next(err))
+//         Promise.resolve(reqHandler(req,res,next)).  // the promis.resolve is used to create a promise which is resolved with the value of the reqHandler
+//         catch((err)=>next(err)) // and the .catch((err)=>next(err)) is used to catch the error of the promise which is created by the promise.resolve
 //     }
 // } // this is a function which is used to handle the asyncronous work in the middleware function
 
